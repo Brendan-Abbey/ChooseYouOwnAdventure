@@ -38,10 +38,24 @@ public class ChooseYouOwnAdventure1 {
             {
                 System.out.println("What level of school would you like to go to (D1,D2,D3)");
                 String a = scan.nextLine();
+                a = a.toUpperCase();
+                if (a.equals("D1"))
+                {
+                    System.out.println("Great choice D1 is an excelent way to make it to the show");
+                }
+                else if (a.equals("D2"))
+                {
+                    System.out.println("Good choice when you pay D2 you can still move up to D1 and is an excellnt place to play baseball.");
+                }
+                else
+                {
+                    System.out.println("D3 is good baseball.");
+                }
+               
             }
             else if (c.equals(cc))
             {
-                System.out.println("Great choice Canada has many schools with varsity baseball teams.\nWould you like to see a list from your province?");
+                System.out.println("Great choice Canada has many schools with varsity baseball teams.\nWould you like to see a list from your province of " + n + "?");
                 String s = scan.nextLine();
                 s = s.toUpperCase();
                 String no = new String("NO");
@@ -50,9 +64,17 @@ public class ChooseYouOwnAdventure1 {
                 {
                     System.out.println("Some example are:\nUofG\nUniversity of Waterloo\nUofT\nLaurier\nBrock\nWestern\nQueens\nMcMaster");
                 }
+                else if (n.equals(yes) && q.equals(yy))
+                {
+                    System.out.println("Some examples of Universities with baseball teams are: \nMcGill\nUniversity of Montreal");
+                }
+                else if (n.equals(yes) && (q.equals(yyy) || q.equals(yyyy)))
+                {
+                 System.out.println("Some examples of Universities with baseball teams are: \nSimon Fraser\nUBC");   
+                }
                 else
                 {
-                    System.out.println("Sorry this program only has examples of Universities in Ontario");
+                    System.out.println("Ok, thank you for using this program!");
                 }
             }
             else
