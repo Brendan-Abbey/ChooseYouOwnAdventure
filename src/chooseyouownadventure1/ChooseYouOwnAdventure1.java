@@ -45,7 +45,7 @@ public class ChooseYouOwnAdventure1 {
                 }
                 else if (a.equals("D2"))
                 {
-                    System.out.println("Good choice when you pay D2 you can still move up to D1 and is an excellnt place to play baseball.");
+                    System.out.println("Good choice when you play D2 you can still move up to D1 and is an excellnt place to play baseball.");
                 }
                 else
                 {
